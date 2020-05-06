@@ -1,0 +1,12 @@
+.navbar-store {
+  margin-top: 10px;
+
+  .nav-item {
+    .nav-link {
+      @include media-breakpoint-up(lg) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
