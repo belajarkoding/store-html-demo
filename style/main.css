@@ -9062,6 +9062,15 @@ body {
   margin-top: 15px;
 }
 
+footer {
+  border-top: 1px solid #e4e4e4;
+  margin-top: 150px;
+}
+
+footer p {
+  color: #979797;
+}
+
 .navbar-store {
   margin-top: 10px;
 }
@@ -9071,6 +9080,10 @@ body {
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+.navbar-store .profile-picture {
+  max-height: 45px;
 }
 
 .page-home h5 {
@@ -9084,6 +9097,15 @@ body {
 
 .page-home .store-new-products {
   margin-top: 10px;
+}
+
+.page-categories h5 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.page-categories .store-trend-categories {
+  margin-top: 30px;
 }
 
 .component-categories {
