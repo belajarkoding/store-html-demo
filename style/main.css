@@ -9108,6 +9108,100 @@ footer p {
   margin-top: 30px;
 }
 
+.page-details h5 {
+  color: #0c0d36;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.page-details .store-heading {
+  margin-bottom: 10px;
+}
+
+.page-details .store-heading h1 {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 0px;
+  color: #0c0d36;
+}
+
+.page-details .store-heading .owner {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 21px;
+  color: #979797;
+  margin-bottom: 8px;
+}
+
+.page-details .store-heading .price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ff7158;
+  margin-bottom: 10px;
+}
+
+.page-details .store-breadcrumbs .breadcrumb {
+  background: transparent;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-details .store-breadcrumbs .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.page-details .store-breadcrumbs .breadcrumb .breadcrumb-item.active {
+  font-weight: 300;
+  color: #0c0d36;
+}
+
+.page-details .store-breadcrumbs .breadcrumb a {
+  color: #979797;
+}
+
+.page-details .store-gallery {
+  margin-bottom: 20px;
+}
+
+.page-details .store-gallery img {
+  border-radius: 10px;
+}
+
+.page-details .store-gallery .thumbnail-image {
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+}
+
+.page-details .store-gallery .thumbnail-image:hover, .page-details .store-gallery .thumbnail-image.active {
+  border: 2px solid #ff7158;
+}
+
+.page-details .store-description p {
+  font-size: 16px;
+  color: #525252;
+  line-height: 180%;
+}
+
+.page-details .store-review .media img {
+  max-width: 50px;
+}
+
+.page-details .store-review .media-body {
+  font-size: 16px;
+  line-height: 180%;
+  color: #525252;
+}
+
+.page-details .store-review .media-body h5 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  color: #0c0d36;
+}
+
 .component-categories {
   background-color: #f4f4f4;
   border-radius: 8px;
