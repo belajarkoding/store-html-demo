@@ -78,7 +78,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link d-inline-block mt-2" href="#">
-                <img src="/images/icon-cart.svg" alt="" />
+                <img src="/images/icon-cart-empty.svg" alt="" />
               </a>
             </li>
           </ul>
@@ -126,11 +126,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8" data-aos="zoom-in">
-              <img
-                :src="photos[activePhoto].url"
-                class="w-100 main-image"
-                alt=""
-              />
+              <transition name="slide-fade" mode="out-in">
+                <img
+                  :key="photos[activePhoto].id"
+                  :src="photos[activePhoto].url"
+                  class="w-100 main-image"
+                  alt=""
+                />
+              </transition>
             </div>
             <div class="col-lg-2">
               <div class="row">
@@ -280,7 +283,7 @@
           AOS.init();
         },
         data: {
-          activePhoto: 1,
+          activePhoto: 0,
           photos: [
             {
               id: 1,
