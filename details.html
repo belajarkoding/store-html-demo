@@ -122,58 +122,30 @@
           </div>
         </div>
       </section>
-      <section class="store-gallery">
+      <section class="store-gallery" id="gallery">
         <div class="container">
           <div class="row">
             <div class="col-lg-8" data-aos="zoom-in">
               <img
-                src="/images/product-details.jpg"
+                :src="photos[activePhoto].url"
                 class="w-100 main-image"
                 alt=""
               />
             </div>
             <div class="col-lg-2">
               <div class="row">
-                <div class="col-3 col-lg-12 mt-2 mt-lg-0">
-                  <a href="#">
+                <div
+                  class="col-3 col-lg-12 mt-2 mt-lg-0"
+                  v-for="(photo, index) in photos"
+                  :key="photo.id"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <a href="#" @click="changeActive(index)">
                     <img
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      src="/images/product-thumbnail-1.jpg"
+                      :src="photo.url"
                       class="w-100 thumbnail-image"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="col-3 col-lg-12 mt-2 mt-lg-0">
-                  <a href="#">
-                    <img
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      src="/images/product-thumbnail-2.jpg"
-                      class="w-100 thumbnail-image"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="col-3 col-lg-12 mt-2 mt-lg-0">
-                  <a href="#">
-                    <img
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      src="/images/product-thumbnail-3.jpg"
-                      class="w-100 thumbnail-image"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="col-3 col-lg-12 mt-2 mt-lg-0">
-                  <a href="#">
-                    <img
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                      src="/images/product-thumbnail-4.jpg"
-                      class="w-100 thumbnail-image active"
+                      :class="{ active: index == activePhoto }"
                       alt=""
                     />
                   </a>
@@ -294,11 +266,46 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 1,
+          photos: [
+            {
+              id: 1,
+              url: "/images/product-details-1.jpg",
+            },
+            {
+              id: 2,
+              url: "/images/product-details-2.jpg",
+            },
+            {
+              id: 3,
+              url: "/images/product-details-3.jpg",
+            },
+            {
+              id: 4,
+              url: "/images/product-details-4.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id) {
+            this.activePhoto = id;
+          },
+        },
+      });
     </script>
   </body>
 </html>
