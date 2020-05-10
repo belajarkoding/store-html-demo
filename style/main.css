@@ -10906,6 +10906,11 @@ footer p {
   color: #0c0d36;
 }
 
+.store-cart .table-cart {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .store-cart .table-cart th {
   font-weight: 200;
 }
