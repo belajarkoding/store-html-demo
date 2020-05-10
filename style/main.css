@@ -10906,6 +10906,24 @@ footer p {
   color: #0c0d36;
 }
 
+.store-cart h2 {
+  font-size: 16px;
+  color: #0c0d36;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.store-cart .product-title {
+  font-size: 18px;
+  color: #0c0d36;
+  margin-top: 15px;
+}
+
+.store-cart .product-subtitle {
+  font-size: 14px;
+  color: #979797;
+}
+
 .store-cart .table-cart {
   margin-left: -15px;
   margin-right: -15px;
@@ -10918,17 +10936,6 @@ footer p {
 .store-cart .table-cart .cart-image {
   border-radius: 8px;
   max-height: 85px;
-}
-
-.store-cart .table-cart .product-title {
-  font-size: 18px;
-  color: #0c0d36;
-  margin-top: 15px;
-}
-
-.store-cart .table-cart .product-subtitle {
-  font-size: 14px;
-  color: #979797;
 }
 
 .store-cart .table-cart .btn-remove-cart {
