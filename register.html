@@ -53,48 +53,97 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="page-content page-auth">
+    <div class="page-content page-auth mt-5" id="register">
       <div class="section-store-auth" data-aos="fade-up">
         <div class="container">
-          <div class="row align-items-center row-login">
-            <div class="col-lg-6 text-center">
-              <img
-                src="/images/login-placeholder.png"
-                alt=""
-                class="w-50 mb-4 mb-lg-none"
-              />
-            </div>
-            <div class="col-lg-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-4">
               <h2>
-                Belanja kebutuhan utama, <br />
-                menjadi lebih mudah
+                Memulai untuk jual beli <br />
+                dengan cara terbaru
               </h2>
               <form class="mt-3">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
+                  <label>Full Name</label>
                   <input
-                    type="email"
-                    class="form-control w-75"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
+                    type="text"
+                    class="form-control is-valid"
+                    aria-describedby="nameHelp"
+                    v-model="name"
+                    autofocus
                   />
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
+                  <label>Email</label>
                   <input
-                    type="password"
-                    class="form-control w-75"
-                    id="exampleInputPassword1"
+                    type="email"
+                    class="form-control is-invalid"
+                    aria-describedby="emailHelp"
+                    v-model="email"
                   />
                 </div>
-                <button
-                  type="submit"
-                  class="btn btn-success btn-block w-75 mt-4"
-                >
-                  Sign In to My Account
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Store</label>
+                  <p class="text-muted">
+                    Apakah anda juga ingin membuka toko?
+                  </p>
+                  <div
+                    class="custom-control custom-radio custom-control-inline"
+                  >
+                    <input
+                      class="custom-control-input"
+                      type="radio"
+                      name="is_store_open"
+                      id="openStoreTrue"
+                      v-model="is_store_open"
+                      :value="true"
+                    />
+                    <label class="custom-control-label" for="openStoreTrue"
+                      >Iya, boleh</label
+                    >
+                  </div>
+                  <div
+                    class="custom-control custom-radio custom-control-inline"
+                  >
+                    <input
+                      class="custom-control-input"
+                      type="radio"
+                      name="is_store_open"
+                      id="openStoreFalse"
+                      v-model="is_store_open"
+                      :value="false"
+                    />
+                    <label
+                      makasih
+                      class="custom-control-label"
+                      for="openStoreFalse"
+                      >Enggak, makasih</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group" v-if="is_store_open">
+                  <label>Nama Toko</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-describedby="storeHelp"
+                  />
+                </div>
+                <div class="form-group" v-if="is_store_open">
+                  <label>Nama Toko</label>
+                  <select name="category" class="form-control">
+                    <option value="" disabled>Select Category</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-success btn-block mt-4">
+                  Sign Up Now
                 </button>
-                <button type="submit" class="btn btn-signup w-75 mt-2">
-                  Sign Up
+                <button type="submit" class="btn btn-signup btn-block mt-2">
+                  Back to Sign In
                 </button>
               </form>
             </div>
@@ -121,6 +170,33 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script src="https://unpkg.com/vue-toasted"></script>
+    <script>
+      Vue.use(Toasted);
+
+      var register = new Vue({
+        el: "#register",
+        mounted() {
+          AOS.init();
+          this.$toasted.error(
+            "Maaf, tampaknya email sudah terdaftar pada sistem kami.",
+            {
+              position: "top-center",
+              className: "rounded",
+              duration: 1000,
+            }
+          );
+        },
+        data: {
+          name: "Angga Hazza Sett",
+          email: "kamujagoan@bwa.id",
+          password: "",
+          is_store_open: true,
+          store_name: "",
+        },
+      });
     </script>
   </body>
 </html>
