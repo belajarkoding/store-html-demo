@@ -65,7 +65,7 @@
 
   .section-content {
     @media (min-width: 768px) {
-      margin-top: -60px;
+      margin-top: 20px;
       margin-left: 20px;
     }
 
@@ -105,6 +105,19 @@
       font-weight: 600;
       font-size: 32px;
       color: #0c0d36;
+    }
+
+    .nav-pills {
+      .nav-link {
+        font-size: 18px;
+        color: #9191a9;
+        border-radius: 0;
+        &.active {
+          color: #0c0d36;
+          border-bottom: 2px solid #0c0d36;
+          background: none;
+        }
+      }
     }
   }
 }

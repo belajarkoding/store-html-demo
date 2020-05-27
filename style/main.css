@@ -11204,7 +11204,7 @@ footer p {
 
 @media (min-width: 768px) {
   .page-dashboard .section-content {
-    margin-top: -60px;
+    margin-top: 20px;
     margin-left: 20px;
   }
 }
@@ -11246,6 +11246,18 @@ footer p {
   font-weight: 600;
   font-size: 32px;
   color: #0c0d36;
+}
+
+.page-dashboard .section-content .nav-pills .nav-link {
+  font-size: 18px;
+  color: #9191a9;
+  border-radius: 0;
+}
+
+.page-dashboard .section-content .nav-pills .nav-link.active {
+  color: #0c0d36;
+  border-bottom: 2px solid #0c0d36;
+  background: none;
 }
 
 .store-breadcrumbs .breadcrumb {
