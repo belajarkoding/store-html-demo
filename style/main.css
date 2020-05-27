@@ -10836,6 +10836,10 @@ footer p {
   color: #979797;
 }
 
+.form-control {
+  background-color: #f3f3f3;
+}
+
 .navbar-store {
   margin-top: 10px;
 }
@@ -10963,7 +10967,7 @@ footer p {
 .store-cart h2 {
   font-size: 16px;
   color: #0c0d36;
-  font-weight: 200;
+  font-weight: 600;
   margin-top: 10px;
 }
 
