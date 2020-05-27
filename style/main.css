@@ -11092,6 +11092,162 @@ footer p {
           box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
 
+.page-success .row-login {
+  min-height: 75vh;
+}
+
+.page-success .section-success h2 {
+  font-size: 28px;
+  color: #0c0d36;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.page-success .section-success .form-control {
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+
+.page-success .section-success .btn-signup {
+  color: #212529;
+  background-color: #f3f3f3;
+  border-color: transparent;
+  color: #bbbbbb;
+}
+
+.page-success .section-success .btn-signup:hover {
+  color: #212529;
+  background-color: #e0e0e0;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.page-success .section-success .btn-signup:focus, .page-success .section-success .btn-signup.focus {
+  color: #212529;
+  background-color: #e0e0e0;
+  border-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
+.page-success .section-success .btn-signup.disabled, .page-success .section-success .btn-signup:disabled {
+  color: #212529;
+  background-color: #f3f3f3;
+  border-color: transparent;
+}
+
+.page-success .section-success .btn-signup:not(:disabled):not(.disabled):active, .page-success .section-success .btn-signup:not(:disabled):not(.disabled).active,
+.show > .page-success .section-success .btn-signup.dropdown-toggle {
+  color: #212529;
+  background-color: #dadada;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.page-success .section-success .btn-signup:not(:disabled):not(.disabled):active:focus, .page-success .section-success .btn-signup:not(:disabled):not(.disabled).active:focus,
+.show > .page-success .section-success .btn-signup.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
+.page-dashboard #page-content-wrapper {
+  background: #f5f5fb;
+}
+
+.page-dashboard #sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+.page-dashboard #sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.page-dashboard #sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+.page-dashboard #sidebar-wrapper #page-content-wrapper {
+  min-width: 100vw;
+}
+
+.page-dashboard #wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.page-dashboard .list-group-item {
+  border: 0;
+  font-size: 16px;
+  color: #c5c5c5;
+}
+
+.page-dashboard .list-group-item.active {
+  background: -webkit-gradient(linear, right top, left top, color-stop(2%, rgba(255, 113, 88, 0.32)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 113, 88, 0.32) 2%, rgba(255, 255, 255, 0) 100%);
+  border-right: 4px solid #ff7158;
+  color: #0c0d36;
+}
+
+@media (min-width: 768px) {
+  .page-dashboard #sidebar-wrapper {
+    margin-left: 0;
+  }
+  .page-dashboard #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .page-dashboard #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-dashboard .section-content {
+    margin-top: -60px;
+    margin-left: 20px;
+  }
+}
+
+.page-dashboard .section-content .dashboard-title {
+  font-weight: normal;
+  font-size: 24px;
+  color: #0c0d36;
+}
+
+.page-dashboard .section-content .dashboard-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  color: #9191a9;
+}
+
+.page-dashboard .section-content .card {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 4px 15px #f1f1f8;
+          box-shadow: 0px 4px 15px #f1f1f8;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.page-dashboard .section-content .card-list {
+  font-size: 18px;
+  line-height: 40px;
+  color: #0c0d36;
+}
+
+.page-dashboard .section-content .dashboard-card-title {
+  font-size: 16px;
+  color: #c5c5c5;
+}
+
+.page-dashboard .section-content .dashboard-card-subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: #0c0d36;
+}
+
 .store-breadcrumbs .breadcrumb {
   background: transparent;
   padding: 0;
