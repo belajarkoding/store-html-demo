@@ -4,6 +4,7 @@
   }
 
   #sidebar-wrapper {
+    margin-top: 60px;
     min-height: 100vh;
     margin-left: -15rem;
     transition: margin 0.25s ease-out;
@@ -28,6 +29,16 @@
     }
   }
 
+  .navbar-store {
+    margin-top: 0;
+    background-color: #f5f5fb;
+    box-shadow: 0px 4px 5px #cacad1;
+    @media (min-width: 768px) {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
   .list-group-item {
     border: 0;
     font-size: 16px;
@@ -47,6 +58,7 @@
   @media (min-width: 768px) {
     #sidebar-wrapper {
       margin-left: 0;
+      margin-top: 0px;
     }
 
     #page-content-wrapper {
@@ -64,6 +76,7 @@
   }
 
   .section-content {
+    margin-top: 100px;
     @media (min-width: 768px) {
       margin-top: 20px;
       margin-left: 20px;
