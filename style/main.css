@@ -11150,6 +11150,7 @@ footer p {
 
 .page-dashboard #page-content-wrapper {
   background: #f5f5fb;
+  min-width: 100vw;
 }
 
 .page-dashboard #sidebar-wrapper {
@@ -11167,10 +11168,6 @@ footer p {
 
 .page-dashboard #sidebar-wrapper .list-group {
   width: 15rem;
-}
-
-.page-dashboard #sidebar-wrapper #page-content-wrapper {
-  min-width: 100vw;
 }
 
 .page-dashboard #wrapper.toggled #sidebar-wrapper {
@@ -11242,30 +11239,22 @@ footer p {
   color: #9191a9;
 }
 
-.page-dashboard .section-content .card {
-  background: #fefefe;
-  -webkit-box-shadow: 0px 4px 15px #f1f1f8;
-          box-shadow: 0px 4px 15px #f1f1f8;
-  border-radius: 8px;
-  border: none;
-  text-decoration: none;
-  margin-bottom: 10px;
+.page-dashboard .section-content .product-title {
+  font-size: 14px;
+  line-height: 25px;
+  color: #979797;
 }
 
-.page-dashboard .section-content .card-list {
+.page-dashboard .section-content .product-subtitle {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 30px;
   color: #0c0d36;
+  margin-bottom: 20px;
 }
 
-.page-dashboard .section-content .dashboard-card-title {
-  font-size: 16px;
-  color: #c5c5c5;
-}
-
-.page-dashboard .section-content .dashboard-card-subtitle {
-  font-weight: 600;
-  font-size: 32px;
+.page-dashboard .section-content h5 {
+  font-size: 18px;
+  line-height: 27px;
   color: #0c0d36;
 }
 
@@ -11369,6 +11358,56 @@ footer p {
   font-weight: 500;
   font-size: 16px;
   color: #ff7158;
+}
+
+.card {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 4px 15px #f1f1f8;
+          box-shadow: 0px 4px 15px #f1f1f8;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none !important;
+}
+
+.card .dashboard-card-title {
+  font-size: 16px;
+  color: #c5c5c5;
+}
+
+.card .dashboard-card-subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: #0c0d36;
+}
+
+.card-list {
+  margin-bottom: 10px;
+}
+
+.card-list .card-body {
+  font-size: 18px;
+  line-height: 40px;
+  color: #0c0d36;
+}
+
+.card-dashboard-product {
+  margin-bottom: 10px;
+}
+
+.card-dashboard-product .card-body {
+  padding: 13px;
+}
+
+.card-dashboard-product .card-body .product-title {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+}
+
+.card-dashboard-product .card-body .product-category {
+  font-size: 16px;
+  line-height: 24px;
+  color: #c5c5c5;
 }
 
 .slide-fade-enter-active {

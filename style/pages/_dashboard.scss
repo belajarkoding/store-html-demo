@@ -1,6 +1,7 @@
 .page-dashboard {
   #page-content-wrapper {
     background: #f5f5fb;
+    min-width: 100vw;
   }
 
   #sidebar-wrapper {
@@ -15,9 +16,6 @@
     }
     .list-group {
       width: 15rem;
-    }
-    #page-content-wrapper {
-      min-width: 100vw;
     }
   }
 
@@ -77,6 +75,7 @@
 
   .section-content {
     margin-top: 100px;
+
     @media (min-width: 768px) {
       margin-top: 20px;
       margin-left: 20px;
@@ -87,36 +86,27 @@
       font-size: 24px;
       color: #0c0d36;
     }
-
     .dashboard-subtitle {
       font-weight: 300;
       font-size: 16px;
       color: #9191a9;
     }
 
-    .card {
-      background: #fefefe;
-      box-shadow: 0px 4px 15px #f1f1f8;
-      border-radius: 8px;
-      border: none;
-      text-decoration: none;
-      margin-bottom: 10px;
+    .product-title {
+      font-size: 14px;
+      line-height: 25px;
+      color: #979797;
     }
-
-    .card-list {
+    .product-subtitle {
       font-size: 18px;
-      line-height: 40px;
+      line-height: 30px;
       color: #0c0d36;
+      margin-bottom: 20px;
     }
 
-    .dashboard-card-title {
-      font-size: 16px;
-      color: #c5c5c5;
-    }
-
-    .dashboard-card-subtitle {
-      font-weight: 600;
-      font-size: 32px;
+    h5 {
+      font-size: 18px;
+      line-height: 27px;
       color: #0c0d36;
     }
 
