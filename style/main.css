@@ -10824,7 +10824,7 @@ body {
 }
 
 .page-content {
-  margin-top: 15px;
+  margin-top: 100px;
 }
 
 footer {
@@ -10841,7 +10841,13 @@ footer p {
 }
 
 .navbar-store {
-  margin-top: 10px;
+  padding-top: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-store {
+    background-color: #fff !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10867,6 +10873,12 @@ footer p {
   background: #29a867;
   color: #fefefe;
   margin-left: -10px;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 .page-home h5 {

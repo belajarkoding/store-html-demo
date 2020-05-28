@@ -31,7 +31,7 @@
     margin-top: 0;
     background-color: #f5f5fb;
     box-shadow: 0px 4px 5px #cacad1;
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(md) {
       background-color: transparent;
       box-shadow: none;
     }
@@ -53,7 +53,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     #sidebar-wrapper {
       margin-left: 0;
       margin-top: 0px;
@@ -76,7 +76,7 @@
   .section-content {
     margin-top: 100px;
 
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(md) {
       margin-top: 20px;
       margin-left: 20px;
     }

@@ -1,5 +1,9 @@
 .navbar-store {
-  margin-top: 10px;
+  padding-top: 15px;
+
+  @include media-breakpoint-down(md) {
+    background-color: #fff !important;
+  }
 
   .nav-item {
     .nav-link {
@@ -25,4 +29,9 @@
     color: #fefefe;
     margin-left: -10px;
   }
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
